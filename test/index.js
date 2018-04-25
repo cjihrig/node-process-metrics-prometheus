@@ -84,6 +84,13 @@ describe('Node Process Metrics - Prometheus', () => {
 
     expect(ee.metrics()).to.match(/nodejs_event_loop_delay 0/);
   });
+
+  it('only gathers certain metrics on the initial collection', () => {
+    const ee = new NPMP({ registries: [new CollectorRegistry()] });
+
+    ee._initialized = true;
+    expect(ee.metrics()).to.not.match(/nodejs_versions\{v8="/);
+  });
 });
 
 
