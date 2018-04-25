@@ -1,6 +1,6 @@
 {
   "name": "node-process-metrics-prometheus",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "retrieve Node.js process metrics in exposition format",
   "author": "Colin J. Ihrig <cjihrig@gmail.com> (http://www.cjihrig.com/)",
   "main": "lib/index.js",
