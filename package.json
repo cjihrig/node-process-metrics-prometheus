@@ -1,0 +1,39 @@
+{
+  "name": "node-process-metrics-prometheus",
+  "version": "0.0.1",
+  "description": "retrieve Node.js process metrics in exposition format",
+  "author": "Colin J. Ihrig <cjihrig@gmail.com> (http://www.cjihrig.com/)",
+  "main": "lib/index.js",
+  "homepage": "https://github.com/cjihrig/node-process-metrics-prometheus",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjihrig/node-process-metrics-prometheus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cjihrig/node-process-metrics-prometheus/issues"
+  },
+  "license": "MIT",
+  "scripts": {
+    "lint": "belly-button -f",
+    "pretest": "npm run lint",
+    "test": "lab -v -a code -t 100"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "dependencies": {
+    "node-process-metrics": "0.1.x",
+    "prom-dress": "0.0.x"
+  },
+  "devDependencies": {
+    "belly-button": "4.x.x",
+    "cb-barrier": "1.x.x",
+    "code": "5.x.x",
+    "lab": "15.x.x"
+  },
+  "keywords": [
+    "metrics",
+    "prometheus",
+    "exposition"
+  ]
+}
